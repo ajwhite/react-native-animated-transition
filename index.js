@@ -23,9 +23,13 @@ function withStyleTransitions (WrappedComponent) {
     }
 
     componentWillReceiveProps(nextProps) {
-      let styleDiffs = diff(nextProps.style, this.props.style)
+      let {additions, changes, removals} = diff(nextProps.style, this.props.style)
 
-      styleDiffs.forEach(key => {
+      // remove no longer used styles
+      // add new styles
+
+      // perform style changes
+      changes.forEach(key => {
         Animated.timing(
           this.state.transition[key]
           {
