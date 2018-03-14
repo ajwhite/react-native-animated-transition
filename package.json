@@ -1,0 +1,22 @@
+  {
+  "name": "react-native-animated-transition",
+  "version": "0.0.1",
+  "description": "Declarative animated transitions for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/ajwhite/react-native-aniamted-transition.git"
+  },
+  "keywords": [
+    "react-native",
+    "animated",
+    "transition",
+    "animate",
+    "animations"
+  ],
+  "author": "Atticus White <contact@atticuswhite.com>",
+  "license": "MIT"
+}
