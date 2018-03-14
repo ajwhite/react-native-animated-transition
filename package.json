@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com/ajwhite/react-native-aniamted-transition.git"
