@@ -5,6 +5,10 @@ const Transition = {
 
 function withStyleTransitions (WrappedComponent) {
   class Transition extends React.Component {
+    static defaultProps = {
+      easing: Easing.Linear
+    }
+
     state = {
       transitions: {}
     }
@@ -26,7 +30,8 @@ function withStyleTransitions (WrappedComponent) {
           this.state.transition[key]
           {
             toValue: nextProps.style[key],
-            duration: this.props.duration
+            duration: this.props.duration,
+            easing: this.props.easing
           }
         ).start()
       });
